@@ -10,7 +10,6 @@
             var characters = {
                 "Thrall" : "Shaman",
                 "Khadgar" : "Mage",
-                "Samuro" : "Blademaster"
             };
             document.write("Thrall: "+characters.Thrall+"<br>");
             document.write("Khadgar: "+characters.Khadgar+"<br>");
@@ -19,6 +18,21 @@
             characters["Genn Greymane"] = "Hunter";
             document.write("Genn Greymane: "+characters["Genn Greymane"]+"<br>");
 
+        </script>
+        <h2>Iterate</h2>
+        <script>
+            for(var key in characters) {
+                document.write(key +' : '+characters[key]+'<br>');
+            }
+        </script>
+        <h2>Property & Method</h2>
+        <script>
+            characters.showAll = function(){
+                for(var key in characters) {
+                document.write(key +' : '+characters[key]+'<br>');
+            }
+            }
+            characters.showAll();
         </script>
     </body>
 </html>
