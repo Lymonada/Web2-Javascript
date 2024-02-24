@@ -4,7 +4,9 @@
         <title>New to Computer Games?</title>
         <meta charset="utf-8">
         <script>
-        function LinkSetColor(color){
+
+            var Links = {
+                setColor:function (color){
             var alist = document.querySelectorAll('a')
             var i = 0
             while (i<alist.length){
@@ -12,7 +14,8 @@
                 i+=1;
             }
         }
-        
+    }
+     
         var Body = {
             setColor: function (color){
                 document.querySelector('body').style.color = color;
@@ -22,10 +25,8 @@
             }
         }
 
-
-
-            function nightDayHandler(self){
-            var target = document.querySelector('body')
+    function nightDayHandler(self){
+        var target = document.querySelector('body')
 
         if(self.value === 'night'){
             Body.setBackgroundColor('black');
