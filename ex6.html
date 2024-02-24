@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New to Computer Games?</title>
+        <meta charset="utf-8">
+        <script>
+        function LinkSetColor(color){
+            var alist = document.querySelectorAll('a')
+            var i = 0
+            while (i<alist.length){
+                alist[i].style.color = color;
+                i+=1;
+            }
+        }
+
+        function BodySetColor(color){
+
+        }
+
+
+            function nightDayHandler(self){
+            var target = document.querySelector('body')
+        if(self.value === 'night'){
+            target.style.backgroundColor = 'black';
+            target.style.color = 'white';
+            document.querySelector('#nightmode2').value = 'day';
+            self.value = 'day';
+
+            LinkSetColor('powderblue')
+
+        } else {
+            target.style.backgroundColor = 'white';
+            target.style.color = 'black';
+            document.querySelector('#nightmode2').value = 'night';
+            self.value = 'night'
+
+            LinkSetColor('blue')
+
+        }
+    }
+        </script>
+    </head>
+<h1><a href="index.html">Computer Games</a></h1>
+
+
+
+    <body>
+        <input id= "nightmode" type="button" value="night" onclick="
+        nightDayHandler(this);
+        ">
+
+        <ol>
+            <li><a href="1.html">Hearthstone</a></li>
+            <li><a href="2.html">League of Legends</a></li>
+            <li><a href="3.html">Baba is You</a></li>
+        </ol>
+
+
+        <h2>Games</h2>
+
+
+        <p>A <a href="https://hearthstone.blizzard.com/ko-kr" 
+            target="_blank" title="Hearthstone Official Website"> computer game</a> is an electronic game that involves interaction with a user interface or input device (such as a joystick, controller, keyboard, or motion sensing device) to generate visual feedback from a display device, most commonly shown in a video format on a television set, computer monitor, flat-panel display or touchscreen on handheld devices, or a virtual reality headset. </p>
+        <p>Whether they’re minions, spells, quests, or heroes, 
+            Hearthstone’s cards can dramatically change the game
+            with powerful effects and crazy interactions.
+        </p>
+
+
+        <input id= "nightmode2" type="button" value="night" onclick="
+        nightDayHandler(this);
+        ">
+
+    
+
+    </body>
+</html>
