@@ -5,11 +5,20 @@
     </head>
     <body>
         <h1>Object</h1>
-        <h2>Create</h2>
-        <scipt>
+        <h2>List</h2>
+        <script>
             var characters = {
-                
-            }
-        </scipt>
+                "Thrall" : "Shaman",
+                "Khadgar" : "Mage",
+                "Samuro" : "Blademaster"
+            };
+            document.write("Thrall: "+characters.Thrall+"<br>");
+            document.write("Khadgar: "+characters.Khadgar+"<br>");
+            characters.Varian = "Warrior";
+            document.write("Varian: "+characters.Varian+"<br>");
+            characters["Genn Greymane"] = "Hunter";
+            document.write("Genn Greymane: "+characters["Genn Greymane"]+"<br>");
+
+        </script>
     </body>
 </html>
