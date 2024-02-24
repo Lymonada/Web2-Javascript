@@ -7,8 +7,8 @@
 
             var Links = {
                 setColor:function (color){
-            var alist = document.querySelectorAll('a')
-            var i = 0
+            var alist = document.querySelectorAll('a');
+            var i = 0;
             while (i<alist.length){
                 alist[i].style.color = color;
                 i+=1;
@@ -26,7 +26,7 @@
         }
 
     function nightDayHandler(self){
-        var target = document.querySelector('body')
+        var target = document.querySelector('body');
 
         if(self.value === 'night'){
             Body.setBackgroundColor('black');
@@ -34,15 +34,15 @@
             document.querySelector('#nightmode2').value = 'day';
             self.value = 'day';
 
-            LinkSetColor('powderblue')
+            Links.setColor('powderblue')
 
         } else {
             Body.setBackgroundColor('white');
             Body.setColor('black');
             document.querySelector('#nightmode2').value = 'night';
-            self.value = 'night'
+            self.value = 'night';
 
-            LinkSetColor('blue')
+            Links.setColor('blue')
 
         }
     }

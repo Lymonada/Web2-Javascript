@@ -43,7 +43,7 @@ function nightDayHandler(self){
         document.querySelector('#nightmode2').value = 'day';
         self.value = 'day';
 
-        LinkSetColor('powderblue')
+        Links.setColor('powderblue');
 
     } else {
         Body.setBackgroundColor('white');
@@ -51,7 +51,7 @@ function nightDayHandler(self){
         document.querySelector('#nightmode2').value = 'night';
         self.value = 'night'
 
-        LinkSetColor('blue')
+        Links.setColor('blue')
 
     }
 }
@@ -61,6 +61,9 @@ function nightDayHandler(self){
 <h1><a href="index.html">Computer Games</a></h1>
 
 <body>
+    <input id= "nightmode" type="button" value="night" onclick="
+        nightDayHandler(this);
+        ">
     <ol>
         <li><a href="1.html">Hearthstone</a></li>
         <li><a href="2.html">League of Legends</a></li>
