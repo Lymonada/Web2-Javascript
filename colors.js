@@ -6,16 +6,18 @@ var Links = {
     //         alist[i].style.color = color;
     //         i+=1;
     //     }
-    $('a').css('colors', color);
+    $('a').css('color', color);
     }
 }
 
 var Body = {
     setColor: function (color){
-        document.querySelector('body').style.color = color;
+        //document.querySelector('body').style.color = color;
+        $('body').css('color', color);
     },
     setBackgroundColor: function (color){
-        document.querySelector('body').style.backgroundColor = color;
+        //document.querySelector('body').style.backgroundColor = color;
+        $('body').css('backgroundColor', color);
     }
 }
 
