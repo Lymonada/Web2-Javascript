@@ -15,19 +15,19 @@
             document.write("Khadgar: "+characters.Khadgar+"<br>");
             characters.Varian = "Warrior";
             document.write("Varian: "+characters.Varian+"<br>");
-            characters["Genn Greymane"] = "Hunter";
+            characters["Genn Greymane"] = "Hunter"; //띄어쓰기 할때는 .key가 아니라 ["key"]
             document.write("Genn Greymane: "+characters["Genn Greymane"]+"<br>");
 
         </script>
         <h2>Iterate</h2>
         <script>
             for(var key in characters) {
-                document.write(key +' : '+characters[key]+'<br>');
+                document.write(key +' : '+characters[key]+'<br>'); //object[key]하면 value
             }
         </script>
         <h2>Property & Method</h2>
         <script>
-            characters.showAll = function(){
+            characters.showAll = function() {
                 for(var key in this) {
                     document.write(key +' : '+this[key]+'<br>');
                 }
